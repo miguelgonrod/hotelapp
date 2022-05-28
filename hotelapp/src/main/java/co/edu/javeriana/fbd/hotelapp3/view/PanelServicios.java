@@ -272,7 +272,7 @@ public class PanelServicios extends javax.swing.JPanel{
 	            if(this.principal.buscarServicio(s) != null) {
 	            	ServicioDTO servicio = new ServicioDTO(
 								            			this.principal.buscarServicio(s).getCodigo(), 
-								            			this.principal.buscarDepto(s).getNombre(), 
+								            			this.principal.buscarServicio(s).getDescripcion(), 
 								            			this.principal.buscarServicio(s).getPrecio()
 	            										);
 	            	textAreaServicios.append("Codigo del servicio: " + servicio.getCodigo() + "\n");
